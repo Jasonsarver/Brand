@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Form Valida  tion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="image"><img src="" alt=""></div>
+            <div class="text">Start Messaging Today!</div>
+        </div>
+        <form id="form">
+            <div class="social">
+                <div class="title">Get Started</div>
+                <div class="question">
+                    Already Have an Account? <br>
+                    <span>Sign In</span>
+                </div>
+                <div class="btn">
+                    <div class="btn-google">
+                        <img src="images/icons8-google-30.png" alt="">
+                    </div>
+                    <div class="btn-fb"><img src="images/icons8-facebook-30.png" alt=""></div>
+                </div>
+                <div class="or">Or</div>
+            </div>
+            <!-- /**
+                * ! userName input
+            **/ -->
+            <div>
+                <label for="username">Username</label>
+                <i class="fa-solid fa-user-check"></i>
+                <input placeholder="Username"type="text" name="username" id="username">
+                <i class="fa-solid fa-triangle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <!-- /**
+                * ! Email Input input
+            **/ -->
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-paper-plane"></i>
+                <input placeholder="Email" type="text" name="Email" id="email">
+                <i class="fa-solid fa-triangle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <!-- /**
+                * ! password input
+            **/ -->
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input placeholder="Password" type="password" name="password" id="password">
+                <i class="fa-solid fa-triangle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/fc0d46cafc.js" crossorigin="anonymous"></script>
+</html>
